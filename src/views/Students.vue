@@ -73,7 +73,6 @@ export default {
             }
             ],
             students: [],
-            infiniteWrapperHeight: 0,
             page: 1,
             studentLimit: 30,
             modalOpened: false,
@@ -94,7 +93,6 @@ export default {
     },
     mounted() {
         this.students = studentList.slice(0, this.studentLimit);
-        this.infiniteWrapperHeight = (window.innerHeight * .85) + 'px';
     },
     methods: {
         ...mapMutations(['setStudent']),
