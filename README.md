@@ -1,2 +1,3 @@
 # vue-student
-Created with CodeSandbox
+
+Sample Student app demonstrating vue-router, vuex, props, computed props and guards
