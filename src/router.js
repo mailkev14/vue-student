@@ -5,26 +5,22 @@ import Students from "./views/Students";
 
 Vue.use(VueRouter);
 
-const routes = [
-  {
-    path: "/students",
-    name: "students",
-    component: Students
-  },
-  {
-    path: "/pay-now",
-    name: "pay_now",
-    component: () => import("./views/Fees")
-  },
-  {
-    path: "*",
-    redirect: "/students"
-  }
-];
-
-const router = new VueRouter({
-  mode: "history",
-  routes
+export default new VueRouter({
+    mode: "history",
+    routes: [
+        {
+            path: "/students",
+            name: "students",
+            component: Students
+        },
+        {
+            path: "/pay-now",
+            name: "pay_now",
+            component: () => import("./views/Fees")
+        },
+        {
+            path: "*",
+            redirect: "/students"
+        }
+    ]
 });
-
-export default router;

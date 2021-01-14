@@ -1398,5 +1398,12 @@ export default [
     email: "student200@test.com",
     phone: "9033285000",
     address: "STUDENT 200 ADDRESS 200"
+  },
+  {
+    firstName: "Student First Name 201",
+    lastName: "Student Last Name 201",
+    email: "student201@test.com",
+    phone: "9033285111",
+    address: "STUDENT 201 ADDRESS 201"
   }
 ];
